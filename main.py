@@ -13,7 +13,6 @@ def main(args):
     accelerator = Accelerator(mixed_precision=args.mixed_precision, logging_dir=logging_dir)
 
     dataset = CELEB(size=128)
-
     train_dataloader = torch.utils.data.DataLoader(dataset, batch_size=args.train_batch_size, shuffle=True)
 
     trainer = Trainer(train_dataloader, args, accelerator)
