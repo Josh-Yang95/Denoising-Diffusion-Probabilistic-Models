@@ -3,10 +3,6 @@ import os
 import torch
 import torch.nn.functional as F
 
-# from diffusers import UNet2DModel, DDIMScheduler, DDIMPipeline
-# from diffusers.optimization import get_scheduler
-# from diffusers.training_utils import EMAModel
-
 from diffusions import UNet2DModel, DDIMScheduler, DDIMPipeline
 from diffusions.optimization import get_scheduler
 from diffusions.training_utils import EMAModel
